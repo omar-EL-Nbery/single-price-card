@@ -1,0 +1,134 @@
+@import url("Family: [Karla](https://fonts.google.com/specimen/Karla) Weights: 400, 700");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla' , sans-serif;
+    background-color: rgb(230, 239, 246);
+ 
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+  
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.community{
+    padding: 2rem;
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.community h1{
+    color:  hsl(179, 62%, 43%);
+}
+.community .subheding{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+
+.para{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: rgb(198, 200, 211);
+}
+
+
+/* ## Subscription ## */
+
+.subscription{
+    background-color:  hsl(179, 62%, 43%);
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.subscription h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.subscription .price{
+    font-weight: bold;
+    font-size: 2rem;
+    gap:.5rem;
+}
+
+.price span {
+    font-size: 1rem;
+    color:rgb(198, 200, 211);
+    font-weight: 400;
+
+}
+
+.sign-up-btn {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    font-size: 1.3rem;
+    box-shadow: 0 0 5px rgb(58, 57, 57);
+    cursor: pointer;
+
+}
+
+.why-us{
+    background-color:  rgb(74, 190, 189);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.why-us h4{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.why-us p{
+    max-width: 80%;
+    font-size: 1.2rem;
+}
+
+/* ## Desktop ## */
+
+@media (min-width: 760px) {
+
+  .information{
+       display: flex;
+    }
+    .information > div{
+        width: 50%;
+    }
+    .community .para{
+        font-size: 1.1rem;
+        line-height: normal;
+        padding-right: 6rem;
+    }
+   
+}
